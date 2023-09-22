@@ -1,2 +1,0 @@
-# pyblog
- edupy blog 
