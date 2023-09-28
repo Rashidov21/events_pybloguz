@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- my css -->
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <link rel="stylesheet" href="{% static 'style/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'style/media.css' %}">
+    <!-- Tailwind api -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <!-- font-awsome api -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Events</title>
+
+
+
+
+
+
+    <style>
+        .wrapper{
+            width: 100%;
+        }
+        .cards{
+            overflow-x: scroll;
+        }
+        .cards .card{
+            scroll-snap-align: start;
+            cursor: pointer;
+            width: 376px;
+            height: 484px;
+            border-radius: 16px;
+            color: white;
+            background-image: url(./images/d1ba4b901bdbeeed4376da47b315f379.jpg);
+            box-shadow: 0px 4px 24px 0px #001A341F;
+            flex-shrink: 0;
+        }
+        .card h2{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .card button{
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+      
+        }
+        .cards .card:hover .button{
+            transition: all 10s ease-in-out;
+            display: block;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cards .card .button{
+            background-color: blue;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            color: white;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="container flex justify-between items-center">
+        <div class="logo"><img src="./images/head.svg" alt=""></div>
+        <ul class="links flex gap-x-10">
+            <li><a href="#">Event’lar</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Bog’lanish</a></li>
+        </ul>
+    </header>
+
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="mt-20"></footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

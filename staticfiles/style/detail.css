@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+.banner .container{
+    width: 100%;
+}
+.banner .text-content h1{
+    font-size: 80px;
+    font-weight: 500;
+    color: white;
+}
+.text-content .about-event{
+    margin-top:2%;
+}
+.text-content .about-event .title{
+    color: white;
+    font-size: 16px;
+    margin-right: 2%;
+}
+.text-content .about-event .tags{
+    padding: 5px 5px;
+    font-size: 12px;
+    margin-right: 2%;
+    font-weight: bold;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+} 
+.text-content .date_time p {
+    color: white;
+}
+.registr-btn button{
+    width: 195px;
+    height: 52px;
+    margin-top:15px;
+}
+
+.about-events{
+    margin-top: 100px;
+}
+.about-events h1{
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.plain-text p{
+    font-size: 20px;
+}
+.plain-text .title{
+    font-size: 24px;
+}
+.about-speakers{
+    margin-top: 50px;
+}
+.about-speakers h1{
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.about-speakers .tags{
+    color: black;
+    padding: 5px 8px;
+    background-color: rgb(220, 221, 221);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 13px;
+}
+.about-speakers .date_time span{
+    margin-top: 20px;
+}
+.about-speakers .registr-btn button{
+    background-color: black;
+    color: white;
+}
+
+.about-speakers .column1{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.about-speakers .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.about-speakers .column2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.profile{
+    width: 322px;
+    height: 322px;
+    padding: 36px;
+    border-radius: 36px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.pro-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.pro-name{
+    color: white;
+    font-size: 30px;
+}
+.pro-sub{
+    color: white;
+    font-size: 12px;
+    padding-right: 5%;
+    margin-bottom: 20px;
+}
+.icons span{
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 50%;
+}
